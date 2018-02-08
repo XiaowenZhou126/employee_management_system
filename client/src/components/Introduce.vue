@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>介绍</h1>
     
   </div>
@@ -7,18 +7,13 @@
 
 <script>
 export default {
-  name: 'Introduce',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
+  name: "Introduce",
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1 {
   font-weight: normal;
 }
 </style>
