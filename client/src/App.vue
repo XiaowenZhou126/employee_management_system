@@ -13,15 +13,11 @@
                 <i class="el-icon-setting"></i>
                 <el-dropdown-menu slot="dropdown">
                   <el-dropdown-item></el-dropdown-item>
-<<<<<<< HEAD
                   <el-dropdown-item>
                     <router-link to="/3-1" style="color: #606266;text-decoration: none">
                       个人中心
                     </router-link>
                   </el-dropdown-item>
-=======
-                  <el-dropdown-item>个人中心</el-dropdown-item>
->>>>>>> c9db07b43fcf6f7ea8152de07a2cd8e7048459a8
                   <el-dropdown-item>登出</el-dropdown-item>
                 </el-dropdown-menu>
               </el-dropdown>
@@ -54,57 +50,34 @@
     </el-header>
     <el-container style="height: 800px; border: 1px solid #eee">
       <el-aside width="200px" style="background-color:#545c64">
-<<<<<<< HEAD
         <el-menu :default-openeds="['1','2','3']" background-color="#545c64" text-color="#fff" router active-text-color="#ffd04b"
           style="border-color:#545c64">
-=======
-        <el-menu :default-openeds="['1','2','3']" class="el-menu-vertical-demo" background-color="#545c64" text-color="#fff" router active-text-color="#ffd04b">
->>>>>>> c9db07b43fcf6f7ea8152de07a2cd8e7048459a8
           <el-submenu index="1">
             <template slot="title">
               <i class="el-icon-menu"></i>
               <span>工资</span>
             </template>
-<<<<<<< HEAD
-            <el-menu-item-group>
-              <el-menu-item index="1-1">查看工资的发放</el-menu-item>
-              <el-menu-item index="1-2">导出工资条</el-menu-item>
-            </el-menu-item-group>
-=======
             <el-menu-item index="1-1">查看工资的发放</el-menu-item>
             <el-menu-item index="1-2">导出工资条</el-menu-item>
->>>>>>> c9db07b43fcf6f7ea8152de07a2cd8e7048459a8
-          </el-submenu>
-          <el-submenu index="2">
-            <template slot="title">
-              <i class="el-icon-menu"></i>
-              <span>请假</span>
-            </template>
-            <el-menu-item index="2-1">请假申请表</el-menu-item>
-            <el-menu-item index="2-2">已申请</el-menu-item>
-          </el-submenu>
-          <el-submenu index="3">
-            <template slot="title">
-              <i class="el-icon-menu"></i>
-              <span>个人中心</span>
-            </template>
-            <el-menu-item index="3-1">基本信息</el-menu-item>
-            <el-menu-item index="3-2">密码修改</el-menu-item>
-          </el-submenu>
+            <el-submenu index="2">
+              <template slot="title">
+                <i class="el-icon-menu"></i>
+                <span>请假</span>
+              </template>
+              <el-menu-item index="2-1">请假申请表</el-menu-item>
+              <el-menu-item index="2-2">已申请</el-menu-item>
+            </el-submenu>
+            <el-submenu index="3">
+              <template slot="title">
+                <i class="el-icon-menu"></i>
+                <span>个人中心</span>
+              </template>
+              <el-menu-item index="3-1">基本信息</el-menu-item>
+              <el-menu-item index="3-2">密码修改</el-menu-item>
+            </el-submenu>
         </el-menu>
       </el-aside>
       <el-main>
-<<<<<<< HEAD
-=======
-        <!-- <el-table :data="tableData">
-          <el-table-column prop="date" label="日期" width="140">
-          </el-table-column>
-          <el-table-column prop="name" label="姓名" width="120">
-          </el-table-column>
-          <el-table-column prop="address" label="地址">
-          </el-table-column>
-        </el-table> -->
->>>>>>> c9db07b43fcf6f7ea8152de07a2cd8e7048459a8
         <router-view></router-view>
       </el-main>
     </el-container>
@@ -125,11 +98,7 @@
       // newNotice 未读公告
       return {
         account: "王小虎",
-<<<<<<< HEAD
         isAddNotice: true,
-=======
-        isAddNotice: true, 
->>>>>>> c9db07b43fcf6f7ea8152de07a2cd8e7048459a8
         newNotice: [{
             id: 0,
             text: "与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；",
@@ -142,12 +111,7 @@
             title: "反馈 Feedback",
             name: "2"
           }
-<<<<<<< HEAD
         ]
-=======
-        ],
-        tableData: Array(10).fill(item)
->>>>>>> c9db07b43fcf6f7ea8152de07a2cd8e7048459a8
       };
     }
   };
