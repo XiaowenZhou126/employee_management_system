@@ -32,7 +32,7 @@
 
 <script>
   export default {
-    name: "Salary",
+    name: "SalaryEmployee",
     data() {
       return {
         isPay: true,
@@ -133,6 +133,4 @@
   }
 
 </style>
-
-
 

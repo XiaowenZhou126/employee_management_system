@@ -57,7 +57,8 @@
               <i class="el-icon-menu"></i>
               <span>薪资</span>
             </template>
-            <el-menu-item index="1-1">查看月工资发放</el-menu-item>
+            <el-menu-item index="1-1" v-if="isHighest">查看工资发放情况</el-menu-item>
+            <el-menu-item index="1-2" v-else>查看月工资发放</el-menu-item>
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">
@@ -94,11 +95,13 @@
         address: "上海市普陀区金沙江路 1518 弄"
       };
       // accunt 账户名
-      // isAddNotice 是否有 发布公告的权限
+      // isAddNotice 是否有 发布公告的权限（即经理和管理员)
+      // isHighest 是否拥有最高权限，即管理员权限
       // newNotice 未读公告
       return {
         account: "王小虎",
         isAddNotice: true,
+        isHighest: 1,
         newNotice: [{
             id: 0,
             text: "与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；",
