@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import Introduce from '@/components/Introduce'
 import SalaryAdmin from '@/components/SalaryAdmin'
 import SalaryEmployee from '@/components/SalaryEmployee'
-import LeaveForm from '@/components/LeaveFormE'
+import LeaveFormE from '@/components/LeaveFormE'
+import AppliedLeaveFormE from '@/components/AppliedLeaveFormE'
 
 Vue.use(Router)
 
@@ -26,8 +27,14 @@ export default new Router({
     },
     {
       path: '/2-1',
-      name: 'LeaveForm',
-      component: LeaveForm
+      name: 'LeaveFormE',
+      component: LeaveFormE
+    },
+    ,
+    {
+      path: '/2-2',
+      name: 'AppliedLeaveFormE',
+      component: AppliedLeaveFormE
     }
   ]
 })
