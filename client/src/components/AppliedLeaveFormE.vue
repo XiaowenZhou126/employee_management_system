@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>已申请</h1>
     <el-table :data="tableData" style="width:1308px">
       <el-table-column fixed type="index"></el-table-column>
       <el-table-column prop="employeeID" label="工号" width="120"></el-table-column>
