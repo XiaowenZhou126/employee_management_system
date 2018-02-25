@@ -6,6 +6,7 @@ import SalaryEmployee from '@/components/SalaryEmployee'
 import LeaveFormE from '@/components/LeaveFormE'
 import AppliedLeaveFormE from '@/components/AppliedLeaveFormE'
 import LeaveFormAdmin from '@/components/LeaveFormAdmin'
+import Password from '@/components/Password'
 
 Vue.use(Router)
 
@@ -31,11 +32,15 @@ export default new Router({
       name: 'LeaveFormAdmin',
       component: LeaveFormAdmin
     },
-    ,
     {
       path: '/2-2',
       name: 'AppliedLeaveFormE',
       component: AppliedLeaveFormE
+    },
+    {
+      path:'/3-2',
+      name:'Password',
+      component:Password
     }
   ]
 })
