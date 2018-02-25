@@ -101,7 +101,7 @@
       return {
         account: "王小虎",
         isAddNotice: true,
-        isHighest: 1,
+        isHighest: 0,
         newNotice: [{
             id: 0,
             text: "与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；",
