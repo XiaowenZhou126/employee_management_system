@@ -1,11 +1,12 @@
 'use strict'
-const path = require('path')
-const utils = require('./utils')
-const config = require('../config')
-const vueLoaderConfig = require('./vue-loader.conf')
+var webpack=require("webpack");
+const path = require('path');
+const utils = require('./utils');
+const config = require('../config');
+const vueLoaderConfig = require('./vue-loader.conf');
 
 function resolve (dir) {
-  return path.join(__dirname, '..', dir)
+  return path.join(__dirname, '..', dir);
 }
 
 
@@ -22,6 +23,12 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  plugins: [ 
+    new webpack.ProvidePlugin({ 
+          $:"jquery", 
+          jQuery:"jquery", 
+         "windows.jQuery":"jquery"
+ })],
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -79,4 +86,4 @@ module.exports = {
     tls: 'empty',
     child_process: 'empty'
   }
-}
+};
