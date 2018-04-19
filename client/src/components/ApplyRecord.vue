@@ -20,49 +20,47 @@
 </template>
 
 <script>
-  export default {
-    name: "AppliedLeaveFormE",
-    data() {
-      return {
-        applyData: [{
-            employeeID: "20170101",
-            name: "王小虎",
-            department: "销售部",
-            position: "经理",
-            reason: "事假",
-            duration: "2017年11月29日至2017年12月01日",
-            audit: "通过"
-          },
-          {
-            employeeID: "20170101",
-            name: "王小虎",
-            department: "销售部",
-            position: "经理",
-            reason: "事假",
-            duration: "2017年12月29日至2018年1月01日",
-            audit: "通过"
-          }
-        ]
-      };
+export default {
+  name: "AppliedLeaveFormE",
+  data() {
+    return {
+      applyData: [
+        {
+          employeeID: "20170101",
+          name: "王小虎",
+          department: "销售部",
+          position: "经理",
+          reason: "事假",
+          duration: "2017年11月29日至2017年12月01日",
+          audit: "通过"
+        },
+        {
+          employeeID: "20170101",
+          name: "王小虎",
+          department: "销售部",
+          position: "经理",
+          reason: "事假",
+          duration: "2017年12月29日至2018年1月01日",
+          audit: "通过"
+        }
+      ]
+    };
+  },
+  methods: {
+    filterTag(value, row) {
+      return row.paid === value;
     },
-    methods: {
-      filterTag(value, row) {
-        return row.paid === value;
-      },
-      filterHandler(value, row, column) {
-        const property = column["property"];
-        return row[property] === value;
-      }
+    filterHandler(value, row, column) {
+      const property = column["property"];
+      return row[property] === value;
     }
-  };
-
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .mainPersonal {
-    margin: 0 20px;
-  }
-
+.mainPersonal {
+  margin: 0 20px;
+}
 </style>
-

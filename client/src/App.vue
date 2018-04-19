@@ -45,7 +45,7 @@
               <i class="el-icon-menu"></i>
               <span>工资管理</span>
             </template>
-            <el-menu-item index="salary_admin" v-if="isHighest">查看工资发放情况</el-menu-item>
+            <el-menu-item index="salary_admin" v-if="isHighest">工资发放情况</el-menu-item>
             <el-menu-item index="salary_employee" v-else>查看月工资发放</el-menu-item>
           </el-submenu>
           <el-submenu index="3">
@@ -89,7 +89,7 @@ export default {
     return {
       account: "王小虎",
       isAddNotice: true,
-      isHighest: true,
+      isHighest: false,
       noticeCount: 100,
     };
   },

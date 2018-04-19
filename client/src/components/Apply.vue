@@ -5,7 +5,8 @@
       <el-row>
         <el-col>
           <el-form-item label="填写日期">
-            <el-date-picker v-model="applyForm.date" type="date" placeholder="选择日期" format="yyyy 年 MM 月 dd 日" value-format="yyyy-MM-dd" readonly></el-date-picker>
+            <el-date-picker v-model="applyForm.date" type="date" placeholder="选择日期" format="yyyy 年 MM 月 dd 日" value-format="yyyy-MM-dd"
+              readonly></el-date-picker>
           </el-form-item>
         </el-col>
       </el-row>
@@ -38,17 +39,18 @@
         </el-col>
       </el-row>
       <el-form-item label="请假时间" prop="duration">
-            <el-date-picker v-model="applyForm.duration" type="datetimerange" range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期"  format="yyyy-MM-dd HH:mm" value-format="yyyy-MM-dd HH:mm" ></el-date-picker>
-        </el-form-item>
+        <el-date-picker v-model="applyForm.duration" type="datetimerange" range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期"
+          format="yyyy-MM-dd HH:mm" value-format="yyyy-MM-dd HH:mm"></el-date-picker>
+      </el-form-item>
       <el-row>
         <el-col :span="14">
           <el-form-item label="请假原因" prop="reason">
-            <el-input type="textarea" v-model="applyForm.reason" :rows="3" ></el-input>
+            <el-input type="textarea" v-model="applyForm.reason" :rows="3"></el-input>
           </el-form-item>
         </el-col>
       </el-row>
       <el-form-item>
-        <el-button type="primary" @click="submitForm('applyForm')" >立即申请</el-button>
+        <el-button type="primary" @click="submitForm('applyForm')">立即申请</el-button>
       </el-form-item>
     </el-form>
   </div>

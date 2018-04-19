@@ -11,7 +11,7 @@
         </el-col>
       </el-row>
       <el-row>
-         <el-col :md="8">
+        <el-col :md="8">
           <el-form-item label="部门名称" prop="departmentName">
             <el-input v-model="infoForm.departmentName"></el-input>
           </el-form-item>
@@ -34,7 +34,7 @@
         </el-col>
       </el-row>
       <el-row>
-         <el-col :md="8">
+        <el-col :md="8">
           <el-form-item label="姓名" prop="name">
             <el-input v-model="infoForm.name"></el-input>
           </el-form-item>
@@ -129,10 +129,7 @@ export default {
   margin: 0 20px;
   position: relative;
 }
-
-.el-form-item {
-  margin: 18px;
-}
 </style>
+
 
 

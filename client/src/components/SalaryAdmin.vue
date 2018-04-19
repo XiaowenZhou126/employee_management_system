@@ -1,14 +1,10 @@
 <template>
-  <div>
-    <el-breadcrumb>
-      <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-      <el-breadcrumb-item>工资管理</el-breadcrumb-item>
-      <el-breadcrumb-item>查看工资发放</el-breadcrumb-item>
-    </el-breadcrumb>
-    
+  <div class="mainPersonal">
+    <h1>工资发放情况</h1>
     <el-row type="flex" class="row-bg" justify="end">
       <el-col :lg="6" :md="8" style="text-align:right;">工资发放日期：{{data}}</el-col>
-    </el-row><hr>
+    </el-row>
+    <hr>
     <el-table :data="salaryData">
       <el-table-column fixed type="index"></el-table-column>
       <el-table-column prop="employeeID" label="工号"></el-table-column>
@@ -137,14 +133,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.el-breadcrumb {
-  height: 80px;
-  line-height: 80px;
-  font-size: 16px;
-}
-
-h1 {
-  font-weight: normal;
+.mainPersonal {
+  margin: 0 20px;
 }
 </style>
+
 

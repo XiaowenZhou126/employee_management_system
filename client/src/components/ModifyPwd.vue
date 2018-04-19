@@ -3,28 +3,28 @@
     <h1>密码修改</h1>
     <el-form :model="pwdForm" ref="pwdForm" status-icon :rules="rules" inline-message label-width="100px">
       <el-row>
-        <el-col>
+        <el-col :md="8">
           <el-form-item label="旧密码" prop="oldpass">
             <el-input type="password" v-model="pwdForm.oldpass"></el-input>
           </el-form-item>
         </el-col>
       </el-row>
       <el-row>
-        <el-col>
+        <el-col :md="8">
           <el-form-item label="密码" prop="pass">
             <el-input type="password" v-model="pwdForm.pass"></el-input>
           </el-form-item>
         </el-col>
       </el-row>
       <el-row>
-        <el-col>
+        <el-col :md="8">
           <el-form-item label="确认密码" prop="checkPass">
             <el-input type="password" v-model="pwdForm.checkPass"></el-input>
           </el-form-item>
         </el-col>
       </el-row>
       <el-form-item>
-        <el-button id="sub" type="primary" @click="submitForm('pwdForm')" >提交</el-button>
+        <el-button id="sub" type="primary" @click="submitForm('pwdForm')">提交</el-button>
         <el-button @click="resetForm('pwdForm')">重置</el-button>
       </el-form-item>
     </el-form>
@@ -111,6 +111,4 @@ export default {
   margin: 0 20px;
 }
 </style>
-
-
 

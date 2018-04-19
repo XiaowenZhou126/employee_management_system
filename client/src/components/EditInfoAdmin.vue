@@ -121,7 +121,7 @@ export default {
         hiredate: "2017-01-02",
         departmentID: "01",
         departmentName: "销售部",
-        position:"助理",
+        position: "助理",
         salary: "6000"
       },
       infoFormCopy: "",
@@ -166,6 +166,13 @@ export default {
           },
           {
             validator: validatePhone,
+            trigger: "blur"
+          }
+        ],
+        address: [
+          {
+            required: true,
+            message: "请输入地址",
             trigger: "blur"
           }
         ],
@@ -237,37 +244,6 @@ export default {
 .mainPersonal {
   margin: 0 20px;
   position: relative;
-}
-
-.el-form-item {
-  margin: 18px;
-}
-
-.avatar-uploader .el-upload {
-  border: 1px dashed #d9d9d9;
-  border-radius: 6px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.avatar-uploader .el-upload:hover {
-  border-color: #409eff;
-}
-
-.avatar-uploader-icon {
-  font-size: 28px;
-  color: #8c939d;
-  width: 178px;
-  height: 178px;
-  line-height: 178px;
-  text-align: center;
-}
-
-.avatar {
-  width: 178px;
-  height: 178px;
-  display: block;
 }
 </style>
 

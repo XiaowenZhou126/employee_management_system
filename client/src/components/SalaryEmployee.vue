@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mainPersonal">
     <h1>查看月工资发放</h1>
     <el-row type="flex" class="row-bg" justify="space-between">
       <el-col :span="6">
@@ -128,6 +128,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.mainPersonal {
+  margin: 0 20px;
+}
 </style>
 
